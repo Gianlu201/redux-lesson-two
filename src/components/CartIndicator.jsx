@@ -24,7 +24,7 @@ const CartIndicator = () => {
     <div className='d-flex justify-content-end my-4'>
       {name ? (
         <>
-          <span className='d-flex align-items-center me-3'>Ciao, {name}</span>
+          <span className='d-flex align-items-center me-3'>Ciao, {name}!</span>
           <Button
             onClick={() => navigate('/cart')}
             className='d-flex align-items-center'

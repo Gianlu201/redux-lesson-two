@@ -1,6 +1,7 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import cartReducer from '../reducers/cart';
 import userReducer from '../reducers/user';
+import bookReducer from '../reducers/book';
 
 // con combineReducers vogliamo compattare tutte le fette (e tutti i
 // reducers) dentro un'unica "pizza"
@@ -10,6 +11,7 @@ const greatReducer = combineReducers({
   // loro gestione
   cart: cartReducer,
   user: userReducer,
+  book: bookReducer,
 });
 
 const store = configureStore({
